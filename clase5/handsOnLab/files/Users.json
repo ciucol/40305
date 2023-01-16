@@ -1,24 +1,9 @@
 [
 	{
-		"name": "Leo",
-		"country": "arg",
-		"password": "7cbed58a0289273450f0e64fb6a3ed6fe59923b47da8c8f18443cccbd043432f",
-		"id": "7d3781d0-5f52-40bd-a5e0-3fcac547edc1",
-		"salt": "ypYUKv/Qr+j2lz8OByIkSv5AYmT5s4RghpksC6BsiC2KiJcBxZxPh1anBG0KuOqWBRElCjItAKImJSz9vWBNAEBvbhzPXN7wnSZgSOztryZAcBTS+lZZTdvuPATMPoIM05xCcorC7hT5Ml0KL+TaxCyqvltKW3X/E5mtJh+Ppoc="
-	},
-	{
 		"name": "Diego",
 		"country": "col",
-		"password": "c54aca8435c00364eda9d50308787d3c09e86e6d5aa35aa6c362a86eca9ccec0",
-		"amount": 1000000,
-		"id": "c816ad26-70da-4c2f-9f4a-85c6996240f3",
-		"salt": "EY70v9W4/bJt6xkKZVF04fGdHzSMNaUTK+iyiFAS8DBT8hj0qDZKRNkYVOZQwSKjxugc8oD55+JgBspeiO4hNEPsJpJNrPnEbqkvyjbf4QlcASJ6BYYEflF0yWJw/FUo7oN2JaB2qwaQaBsC0T2gKHikGkQw1oIMBZESvIdVxaU="
-	},
-	{
-		"name": "Diego",
-		"country": "col",
-		"password": "f0f215f2390ce6794ba045a5254a25ef2516545d8907ae7bfe56edf0e4f3394f",
-		"id": "0d406b7e-532c-4062-8643-83db778f329f",
-		"salt": "cy1xnh3XGAovlZvYEuLcx51poOBOSIUnMt8oenj8Bc9Rf/01+/I1T2nwtOXwsFudBxEeGAjM8GkE/3xRXt7g7+9zKFha/erXI++3gPby3ryMutCAsEynrIGZXt1e1utp36DaXBru1I2lp0wGTNprVz1y5gMaXRGaO07Mw7AMGFs="
+		"password": "44ef09ecfe6b870ab229b2f4d9a21d2a824e18c0b31d8d3e052a8b94a54d7b9e",
+		"id": "74dfea41-4552-43f9-bc5e-b8a0d8848682",
+		"salt": "mjMtXUD8c5IjSIVYD32PQC/jtLu9mi6AuWP1exTCcN/FvL0GIhbrZt10GHg6ZnqMc0l77YTsY7SwW2jL3wQgcg3Q8HTXjO8VaY3sTVsQhSl81T6dj1QuSSDVbcAzAaLrphyfS/9V77qy/VZr5QHPomyBBdHFQunfeMVFy/t/oTc="
 	}
 ]
