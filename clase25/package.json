@@ -1,0 +1,21 @@
+{
+  "name": "clase25",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/index.js",
+    "start:local": "nodemon src/index.js --mode local",
+    "start:dev": "nodemon src/index.js --mode development",
+    "start:prod": "nodemon src/index.js --mode production"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^10.0.0",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2"
+  }
+}
