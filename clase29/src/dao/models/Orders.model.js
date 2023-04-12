@@ -14,6 +14,7 @@ const collectionSchema = new mongoose.Schema({
   },
   products: [],
   totalPrice: Number,
+  status: String,
 })
 
 const Orders = mongoose.model(collectionName, collectionSchema)

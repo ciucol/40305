@@ -1,10 +1,13 @@
 const { Router } = require('express')
+const RestaurantsDAO = require('../dao/Restaurants.dao')
 
+const Restaurants = new RestaurantsDAO()
 const router = Router()
 
 router.get('/', async (req, res) => {
   try {
-    res.json({ status: 'success', message })
+    const restaurants = await Restaurants.getAll()
+    res.json({ status: 'success', message: restaurants })
   } catch (error) {
     console.log(error.message)
     res.status(500).json({ status: 'error', message: 'Internal Server Error' })
@@ -14,8 +17,8 @@ router.get('/', async (req, res) => {
 router.get('/:id', async (req, res) => {
   try {
     const { id } = req.params
-
-    res.json({ status: 'success', message })
+    const restaurants = await Restaurants.getOne(id)
+    res.json({ status: 'success', message: restaurants })
   } catch (error) {
     console.log(error.message)
     res.status(500).json({ status: 'error', message: 'Internal Server Error' })
@@ -24,19 +27,32 @@ router.get('/:id', async (req, res) => {
 
 router.post('/', async (req, res) => {
   try {
-    const {} = req.body
-    res.status(201).json({ status: 'success', message })
+    const { name } = req.body
+    const newRestaurantInfo = {
+      name,
+    }
+    const newRestaurant = await Restaurants.create(newRestaurantInfo)
+    res.status(201).json({ status: 'success', message: newRestaurant })
   } catch (error) {
     console.log(error.message)
     res.status(500).json({ status: 'error', message: 'Internal Server Error' })
   }
 })
 
-router.patch('/:id', async (req, res) => {
+router.patch('/:id/addProduct', async (req, res) => {
   try {
     const { id } = req.params
-    const {} = req.body
-    res.json({ status: 'success', message })
+    const { name, price } = req.body
+    const newProductInfo = {
+      name,
+      price,
+    }
+    const restaurant = await Restaurants.getOne(id)
+    restaurant.products.push(newProductInfo)
+
+    const restaurantUpdate = await Restaurants.update(id, restaurant)
+
+    res.json({ status: 'success', message: restaurantUpdate })
   } catch (error) {
     console.log(error.message)
     res.status(500).json({ status: 'error', message: 'Internal Server Error' })

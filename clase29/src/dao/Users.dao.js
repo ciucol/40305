@@ -1,3 +1,4 @@
+const UserDTO = require('../DTOs/User.dto')
 const Users = require('./models/Users.model')
 
 class UsersDAO {
@@ -21,7 +22,8 @@ class UsersDAO {
 
   async create(userInfo) {
     try {
-      return await Users.create(userInfo)
+      const newUserInfo = new UserDTO(userInfo)
+      return await Users.create(newUserInfo)
     } catch (error) {
       throw error
     }

@@ -19,9 +19,9 @@ class RestaurantsDAO {
     }
   }
 
-  async create(restaurantInfo) {
+  async create(newRestaurantInfo) {
     try {
-      return await Restaurants.create(restaurantInfo)
+      return await Restaurants.create(newRestaurantInfo)
     } catch (error) {
       throw error
     }
