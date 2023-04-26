@@ -1,0 +1,14 @@
+{
+  "name": "40305ossaluda",
+  "version": "0.1.1",
+  "description": "Un paquete para saludar",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "saludos"
+  ],
+  "author": "coder40305",
+  "license": "MIT"
+}
